@@ -79,7 +79,7 @@ We are going to use an existing dataset used for a 'Sentiment Analysis' scenario
 1. Run the following ML.NET CLI command:
 
     ```console
-    > mlnet auto-train --task binary-classification --dataset "yelp_labelled.txt" --label-column-index 1 --has-header false --max-exploration-time 10
+    > mlnet auto-train -T binary-classification -d "yelp_labelled.txt" -i 1 -H false -x 10
     ```
 
     This command runs the **`mlnet auto-train` command**:
